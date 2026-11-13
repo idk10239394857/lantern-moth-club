@@ -1,0 +1,24 @@
+/* Lantern Moth Club theme: luna-moth green primary */
+:root {
+  --bs-primary-base: oklch(52% 0.13 160);
+  --bs-primary-bg: oklch(42% 0.11 162);
+  --bs-primary-fg: light-dark(oklch(40% 0.11 162), oklch(80% 0.12 158));
+  --bs-primary-fg-emphasis: light-dark(oklch(30% 0.08 162), oklch(90% 0.08 158));
+  --bs-primary-bg-subtle: light-dark(oklch(95% 0.03 158), oklch(26% 0.05 162));
+  --bs-primary-bg-muted: light-dark(oklch(88% 0.06 158), oklch(33% 0.07 162));
+  --bs-primary-border: light-dark(oklch(74% 0.08 158), oklch(46% 0.1 162));
+  --bs-primary-focus-ring: oklch(55% 0.13 160 / 0.5);
+  --bs-primary-contrast: #fff;
+}
+
+.btn-solid.theme-primary {
+  --bs-btn-bg: oklch(42% 0.11 162);
+  --bs-btn-border-color: oklch(42% 0.11 162);
+  --bs-btn-color: #fff;
+  --bs-btn-hover-bg: oklch(36% 0.1 162);
+  --bs-btn-hover-border-color: oklch(36% 0.1 162);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-bg: oklch(31% 0.09 162);
+  --bs-btn-active-border-color: oklch(31% 0.09 162);
+  --bs-btn-active-color: #fff;
+}
