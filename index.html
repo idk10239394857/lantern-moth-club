@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lantern Moth Club helps beginners find, identify and log moths at night.">
+  <title>Lantern Moth Club | Backyard Moth-Watching for Beginners</title>
+  <link rel="icon" href="images/luna-moth.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar md:navbar-expand bg-1 border-bottom" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand theme-primary fw-bold" href="index.html">Lantern Moth Club</a>
+        <button class="btn navbar-toggler ms-auto" type="button" data-bs-toggle="drawer" data-bs-target="#siteDrawer" aria-controls="siteDrawer" aria-label="Open navigation menu">
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <dialog class="drawer drawer-end" id="siteDrawer" aria-labelledby="siteDrawerLabel">
+          <div class="drawer-header">
+            <p class="drawer-title fw-bold mb-0" id="siteDrawerLabel">Menu</p>
+            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close navigation menu"></button>
+          </div>
+          <div class="drawer-body">
+            <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Field Log</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </dialog>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="container py-5">
+      <h1 class="text-5xl fw-bold">Meet the night shift</h1>
+      <p class="text-lg mb-4">Lantern Moth Club gathers neighbours on warm evenings to hang a white sheet, switch on a light and see who flutters in.</p>
+      <div id="mothCarousel" class="carousel carousel-overlay rounded overflow-hidden" role="region" aria-roledescription="carousel" aria-label="Club night highlights">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/slide-1.svg" class="d-block w-100 h-auto" width="1200" height="500" alt="A lit white sheet hanging in a dark backyard with a lamp above it and three moths resting on the fabric">
+        </div>
+        <div class="carousel-item">
+          <img src="images/slide-2.svg" class="d-block w-100 h-auto" width="1200" height="500" alt="A row of glowing lanterns strung over a night garden full of pale flowers">
+        </div>
+        <div class="carousel-item">
+          <img src="images/slide-3.svg" class="d-block w-100 h-auto" width="1200" height="500" alt="An open field journal with a sketched red moth on the left page and lined notes on the right">
+        </div>
+        </div>
+        <div class="carousel-overlay-controls">
+          <button class="btn-icon btn-solid theme-primary" type="button" data-bs-target="#mothCarousel" data-bs-slide="prev" aria-label="Previous slide">
+            <span class="carousel-icon-prev" aria-hidden="true"></span>
+          </button>
+          <button class="btn-icon btn-solid theme-primary" type="button" data-bs-target="#mothCarousel" data-bs-slide="next" aria-label="Next slide">
+            <span class="carousel-icon-next" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="container" aria-labelledby="regulars-heading">
+      <h2 id="regulars-heading" class="mb-4">Six regulars at our light sheet</h2>
+      <div class="row g-4">
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/luna-moth.svg" class="card-img-top h-auto" width="600" height="400" alt="Illustration of a Luna Moth with wings spread against a starry night sky">
+            <div class="card-body">
+              <h3 class="h5">Luna Moth</h3>
+              <p>A pale green giant with long trailing hindwing tails that spin in the air to confuse hunting bats.</p>
+              <details>
+                <summary class="fw-semibold">Field notes</summary>
+                <p class="mt-2 mb-0">Adults have no working mouthparts and live about a week, so every night counts. Look for them in late May near walnut, birch and sweetgum trees.</p>
+              </details>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#dialog-luna-moth">Spotting tip</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/rosy-maple-moth.svg" class="card-img-top h-auto" width="600" height="400" alt="Illustration of a Rosy Maple Moth with wings spread against a starry night sky">
+            <div class="card-body">
+              <h3 class="h5">Rosy Maple Moth</h3>
+              <p>A fuzzy pink-and-yellow moth small enough to sit on a thumbnail, often mistaken for a flower petal.</p>
+              <details>
+                <summary class="fw-semibold">Field notes</summary>
+                <p class="mt-2 mb-0">Caterpillars feed on maple leaves, so suburban streets lined with silver and red maples are reliable spots from June to August.</p>
+              </details>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#dialog-rosy-maple-moth">Spotting tip</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/polyphemus-moth.svg" class="card-img-top h-auto" width="600" height="400" alt="Illustration of a Polyphemus Moth with wings spread against a starry night sky">
+            <div class="card-body">
+              <h3 class="h5">Polyphemus Moth</h3>
+              <p>A tan, hand-sized silk moth named for the one-eyed giant, thanks to the bold eyespots on its hindwings.</p>
+              <details>
+                <summary class="fw-semibold">Field notes</summary>
+                <p class="mt-2 mb-0">When disturbed, it flashes those blue-ringed eyespots to startle birds. Females release a scent that males can detect from kilometres away.</p>
+              </details>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#dialog-polyphemus-moth">Spotting tip</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/cecropia-moth.svg" class="card-img-top h-auto" width="600" height="400" alt="Illustration of a Cecropia Moth with wings spread against a starry night sky">
+            <div class="card-body">
+              <h3 class="h5">Cecropia Moth</h3>
+              <p>North America's largest native moth, banded in brick red, cream and charcoal with a wingspan up to 15 cm.</p>
+              <details>
+                <summary class="fw-semibold">Field notes</summary>
+                <p class="mt-2 mb-0">Cocoons are spun lengthwise along twigs and survive the winter. Spotting one in March is a good sign of adults in your area by June.</p>
+              </details>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#dialog-cecropia-moth">Spotting tip</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/io-moth.svg" class="card-img-top h-auto" width="600" height="400" alt="Illustration of a Io Moth with wings spread against a starry night sky">
+            <div class="card-body">
+              <h3 class="h5">Io Moth</h3>
+              <p>A butter-yellow moth that hides a single enormous eyespot on each hindwing until it needs to scare off a predator.</p>
+              <details>
+                <summary class="fw-semibold">Field notes</summary>
+                <p class="mt-2 mb-0">The spiny green caterpillars can sting, so watch them without touching. Adults are common in grassy edges and orchards in midsummer.</p>
+              </details>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#dialog-io-moth">Spotting tip</button>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/clearwing-moth.svg" class="card-img-top h-auto" width="600" height="400" alt="Illustration of a Hummingbird Clearwing with wings spread against a starry night sky">
+            <div class="card-body">
+              <h3 class="h5">Hummingbird Clearwing</h3>
+              <p>A daytime moth with see-through wing panels that hovers at flowers and is often reported as a tiny hummingbird.</p>
+              <details>
+                <summary class="fw-semibold">Field notes</summary>
+                <p class="mt-2 mb-0">It feeds on bee balm, phlox and honeysuckle in full sun. Its fast wingbeats make a soft hum you can hear up close.</p>
+              </details>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#dialog-clearwing-moth">Spotting tip</button>
+            </div>
+          </article>
+        </div>
+      </div>
+      <dialog class="dialog" id="dialog-luna-moth" aria-labelledby="dialog-luna-moth-title">
+        <div class="dialog-header">
+          <h3 class="dialog-title" id="dialog-luna-moth-title">Spotting tip: Luna Moth</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+        </div>
+        <div class="dialog-body">
+          <p class="mb-0">Luna moths are drawn to white light. Hang your sheet near the tree line and check it around midnight, when they arrive most often.</p>
+        </div>
+        <div class="dialog-footer">
+          <button type="button" class="btn-solid theme-primary" data-bs-dismiss="dialog">Got it</button>
+        </div>
+      </dialog>
+      <dialog class="dialog" id="dialog-rosy-maple-moth" aria-labelledby="dialog-rosy-maple-moth-title">
+        <div class="dialog-header">
+          <h3 class="dialog-title" id="dialog-rosy-maple-moth-title">Spotting tip: Rosy Maple Moth</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+        </div>
+        <div class="dialog-body">
+          <p class="mb-0">Their bright colours fade quickly in photos under yellow porch bulbs. Use a cool white lantern if you want a true-colour picture.</p>
+        </div>
+        <div class="dialog-footer">
+          <button type="button" class="btn-solid theme-primary" data-bs-dismiss="dialog">Got it</button>
+        </div>
+      </dialog>
+      <dialog class="dialog" id="dialog-polyphemus-moth" aria-labelledby="dialog-polyphemus-moth-title">
+        <div class="dialog-header">
+          <h3 class="dialog-title" id="dialog-polyphemus-moth-title">Spotting tip: Polyphemus Moth</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+        </div>
+        <div class="dialog-body">
+          <p class="mb-0">Approach slowly from the side. A sudden shadow over a resting Polyphemus will make it flash its eyespots and fly off.</p>
+        </div>
+        <div class="dialog-footer">
+          <button type="button" class="btn-solid theme-primary" data-bs-dismiss="dialog">Got it</button>
+        </div>
+      </dialog>
+      <dialog class="dialog" id="dialog-cecropia-moth" aria-labelledby="dialog-cecropia-moth-title">
+        <div class="dialog-header">
+          <h3 class="dialog-title" id="dialog-cecropia-moth-title">Spotting tip: Cecropia Moth</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+        </div>
+        <div class="dialog-body">
+          <p class="mb-0">Cecropias fly in the small hours. If your light session ends before 1 a.m., you will probably miss them.</p>
+        </div>
+        <div class="dialog-footer">
+          <button type="button" class="btn-solid theme-primary" data-bs-dismiss="dialog">Got it</button>
+        </div>
+      </dialog>
+      <dialog class="dialog" id="dialog-io-moth" aria-labelledby="dialog-io-moth-title">
+        <div class="dialog-header">
+          <h3 class="dialog-title" id="dialog-io-moth-title">Spotting tip: Io Moth</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+        </div>
+        <div class="dialog-body">
+          <p class="mb-0">Males are yellow and females are reddish-brown. Logging both on the same night is a fun challenge for new members.</p>
+        </div>
+        <div class="dialog-footer">
+          <button type="button" class="btn-solid theme-primary" data-bs-dismiss="dialog">Got it</button>
+        </div>
+      </dialog>
+      <dialog class="dialog" id="dialog-clearwing-moth" aria-labelledby="dialog-clearwing-moth-title">
+        <div class="dialog-header">
+          <h3 class="dialog-title" id="dialog-clearwing-moth-title">Spotting tip: Hummingbird Clearwing</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+        </div>
+        <div class="dialog-body">
+          <p class="mb-0">You do not need a lantern for this one. Plant bee balm and sit nearby on a warm afternoon with your notebook ready.</p>
+        </div>
+        <div class="dialog-footer">
+          <button type="button" class="btn-solid theme-primary" data-bs-dismiss="dialog">Got it</button>
+        </div>
+      </dialog>
+    </section>
+  </main>
+  <footer class="bg-1 border-top py-4 mt-5">
+    <div class="container text-center small">
+      <p class="mb-1">&copy; 2026 Lantern Moth Club &middot; Backyard moth-watching for curious beginners.</p>
+      <p class="mb-0">All illustrations are original artwork created for this site.</p>
+    </div>
+  </footer>
+  <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
