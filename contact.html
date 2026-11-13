@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Lantern Moth Club to join a night walk, borrow a light kit or report a sighting.">
+  <title>Contact Lantern Moth Club | Join a Night Walk</title>
+  <link rel="icon" href="images/luna-moth.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar md:navbar-expand bg-1 border-bottom" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand theme-primary fw-bold" href="index.html">Lantern Moth Club</a>
+        <button class="btn navbar-toggler ms-auto" type="button" data-bs-toggle="drawer" data-bs-target="#siteDrawer" aria-controls="siteDrawer" aria-label="Open navigation menu">
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <dialog class="drawer drawer-end" id="siteDrawer" aria-labelledby="siteDrawerLabel">
+          <div class="drawer-header">
+            <p class="drawer-title fw-bold mb-0" id="siteDrawerLabel">Menu</p>
+            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close navigation menu"></button>
+          </div>
+          <div class="drawer-body">
+            <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Field Log</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+          </div>
+        </dialog>
+      </div>
+    </nav>
+  </header>
+  <main class="container py-5">
+    <h1 class="text-4xl fw-bold">Get in touch</h1>
+    <p class="text-lg mb-4">Want to join a night walk, borrow a light kit or tell us about a moth you found? Send us a note.</p>
+    <form action="#" method="post" class="row g-3" aria-label="Contact form">
+      <div class="col-12 md:col-6 form-field">
+        <label for="firstName">First name</label>
+        <input type="text" class="form-control" id="firstName" name="firstName" autocomplete="given-name" required>
+      </div>
+      <div class="col-12 md:col-6 form-field">
+        <label for="lastName">Last name</label>
+        <input type="text" class="form-control" id="lastName" name="lastName" autocomplete="family-name" required>
+      </div>
+      <div class="col-12 md:col-6 form-field">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" name="email" autocomplete="email" placeholder="name@example.com" required>
+      </div>
+      <div class="col-12 md:col-6 form-field">
+        <label for="reason">Reason for contacting</label>
+        <select class="form-control" id="reason" name="reason" required>
+          <option value="walk">Join a night walk</option>
+          <option value="kit">Borrow a light kit</option>
+          <option value="sighting">Report a moth sighting</option>
+          <option value="other">Something else</option>
+        </select>
+      </div>
+      <div class="col-12 form-field">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+      </div>
+      <div class="col-12 form-field">
+        <input type="checkbox" class="check" id="consent" name="consent" required>
+        <label for="consent">I agree that Lantern Moth Club may contact me by email about my request.</label>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn-solid theme-primary">Send message</button>
+      </div>
+    </form>
+  </main>
+  <footer class="bg-1 border-top py-4 mt-5">
+    <div class="container text-center small">
+      <p class="mb-1">&copy; 2026 Lantern Moth Club &middot; Backyard moth-watching for curious beginners.</p>
+      <p class="mb-0">All illustrations are original artwork created for this site.</p>
+    </div>
+  </footer>
+  <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
