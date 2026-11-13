@@ -1,82 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Contact Lantern Moth Club to join a night walk, borrow a light kit or report a sighting.">
-  <title>Contact Lantern Moth Club | Join a Night Walk</title>
-  <link rel="icon" href="images/luna-moth.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header>
-    <nav class="navbar md:navbar-expand bg-1 border-bottom" aria-label="Main navigation">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Northwind Trails | Contact</title>
+    <meta
+      name="description"
+      content="Contact Northwind Trails to plan your next mountain getaway or custom eco-tour."
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
       <div class="container">
-        <a class="navbar-brand theme-primary fw-bold" href="index.html">Lantern Moth Club</a>
-        <button class="btn navbar-toggler ms-auto" type="button" data-bs-toggle="drawer" data-bs-target="#siteDrawer" aria-controls="siteDrawer" aria-label="Open navigation menu">
-          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        <a class="navbar-brand" href="index.html" aria-label="Northwind Trails home page">
+          <span class="brand-mark">N</span>
+          <span>Northwind Trails</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobileNav"
+          aria-controls="mobileNav"
+          aria-label="Open navigation menu"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <dialog class="drawer drawer-end" id="siteDrawer" aria-labelledby="siteDrawerLabel">
-          <div class="drawer-header">
-            <p class="drawer-title fw-bold mb-0" id="siteDrawerLabel">Menu</p>
-            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close navigation menu"></button>
-          </div>
-          <div class="drawer-body">
-            <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Field Log</a></li>
-          <li class="nav-item"><a class="nav-link active" href="contact.html" aria-current="page">Contact</a></li>
-            </ul>
-          </div>
-        </dialog>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#adventures">Adventures</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#experiences">Experiences</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-3">
+              <a class="btn btn-primary btn-sm rounded-pill px-3" href="contact.html#contactForm">Book now</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-  </header>
-  <main class="container py-5">
-    <h1 class="text-4xl fw-bold">Get in touch</h1>
-    <p class="text-lg mb-4">Want to join a night walk, borrow a light kit or tell us about a moth you found? Send us a note.</p>
-    <form action="#" method="post" class="row g-3" aria-label="Contact form">
-      <div class="col-12 md:col-6 form-field">
-        <label for="firstName">First name</label>
-        <input type="text" class="form-control" id="firstName" name="firstName" autocomplete="given-name" required>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="mobileNavLabel">Northwind Trails</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close menu"></button>
       </div>
-      <div class="col-12 md:col-6 form-field">
-        <label for="lastName">Last name</label>
-        <input type="text" class="form-control" id="lastName" name="lastName" autocomplete="family-name" required>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#adventures">Adventures</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#experiences">Experiences</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
       </div>
-      <div class="col-12 md:col-6 form-field">
-        <label for="email">Email address</label>
-        <input type="email" class="form-control" id="email" name="email" autocomplete="email" placeholder="name@example.com" required>
-      </div>
-      <div class="col-12 md:col-6 form-field">
-        <label for="reason">Reason for contacting</label>
-        <select class="form-control" id="reason" name="reason" required>
-          <option value="walk">Join a night walk</option>
-          <option value="kit">Borrow a light kit</option>
-          <option value="sighting">Report a moth sighting</option>
-          <option value="other">Something else</option>
-        </select>
-      </div>
-      <div class="col-12 form-field">
-        <label for="message">Message</label>
-        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-      </div>
-      <div class="col-12 form-field">
-        <input type="checkbox" class="check" id="consent" name="consent" required>
-        <label for="consent">I agree that Lantern Moth Club may contact me by email about my request.</label>
-      </div>
-      <div class="col-12">
-        <button type="submit" class="btn-solid theme-primary">Send message</button>
-      </div>
-    </form>
-  </main>
-  <footer class="bg-1 border-top py-4 mt-5">
-    <div class="container text-center small">
-      <p class="mb-1">&copy; 2026 Lantern Moth Club &middot; Backyard moth-watching for curious beginners.</p>
-      <p class="mb-0">All illustrations are original artwork created for this site.</p>
     </div>
-  </footer>
-  <script type="module" src="js/bootstrap.bundle.min.js"></script>
-</body>
+
+    <main class="contact-page">
+      <section class="page-hero">
+        <div class="container py-5">
+          <div class="text-center">
+            <p class="eyebrow">Connect with us</p>
+            <h1>Plan your next adventure</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-5 align-items-start">
+            <div class="col-lg-5">
+              <div class="contact-card shadow-sm h-100">
+                <h2 class="h3">Visit or call</h2>
+                <ul class="contact-list">
+                  <li>
+                    <strong>Address</strong>
+                    <span>218 Summit Lane, Bend, OR 97702</span>
+                  </li>
+                  <li>
+                    <strong>Phone</strong>
+                    <span>(541) 555-0148</span>
+                  </li>
+                  <li>
+                    <strong>Email</strong>
+                    <span>hello@northwindtrails.com</span>
+                  </li>
+                </ul>
+                <div class="hours-box mt-4">
+                  <h3 class="h5">Hours</h3>
+                  <p>Monday–Friday: 9:00 AM–5:00 PM</p>
+                  <p>Saturday: 10:00 AM–2:00 PM</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <form id="contactForm" class="contact-form shadow-sm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="firstName" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First name" />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="lastName" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last name" />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="trip" class="form-label">Trip interest</label>
+                    <input type="text" class="form-control" id="trip" name="trip" placeholder="Trail or getaway" />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="travelDate" class="form-label">Preferred date</label>
+                    <input type="date" class="form-control" id="travelDate" name="travelDate" />
+                  </div>
+                  <div class="col-12">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Tell us about your dream trip..."></textarea>
+                  </div>
+                  <div class="col-12 d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary btn-lg rounded-pill px-4">Send request</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row gy-3 align-items-center">
+          <div class="col-md-6">
+            <p class="mb-0">© 2026 Northwind Trails</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="index.html">Home</a>
+            <a href="index.html#adventures">Adventures</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
